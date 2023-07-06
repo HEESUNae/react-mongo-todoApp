@@ -1,6 +1,6 @@
 {
   "name": "react-todoapp",
-  "homepage": ".",
+  "homepage": "https://react-mongo-todo-app.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "main": "server.js",
