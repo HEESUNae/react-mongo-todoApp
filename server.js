@@ -9,7 +9,7 @@ const path = require('path');
 // CORS
 app.use(express.json());
 var cors = require('cors');
-app.use(cors());
+app.use(cors({ credentials: true, origin: 'https://react-mongo-todo-app.vercel.app/' }));
 
 // json parsing
 app.use(express.json());
