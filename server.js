@@ -38,5 +38,3 @@ app.get('*', (req, res) => {
 app.listen(port, (req, res) => {
   console.log('start ' + port);
 });
-
-module.exports = app;
