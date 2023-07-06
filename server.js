@@ -3,13 +3,13 @@ const { PORT, MONGO_URI } = process.env;
 
 const express = require('express');
 const app = express();
-const port = PORT;
+const port = PORT | 4000;
 const path = require('path');
 
 // CORS
 app.use(express.json());
 var cors = require('cors');
-app.use(cors({ credentials: true, origin: 'http://localhost:3333' }));
+app.use(cors());
 
 // json parsing
 app.use(express.json());
