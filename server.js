@@ -35,7 +35,7 @@ app.get('*', (req, res) => {
   res.sendFile(__dirname + '/build/index.html');
 });
 
-app.listen(port, () => {
+app.listen(port, (req, res) => {
   console.log('start ' + port);
 });
 
