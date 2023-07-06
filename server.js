@@ -3,7 +3,7 @@ const { PORT, MONGO_URI } = process.env;
 
 const express = require('express');
 const app = express();
-const port = PORT | 4000;
+const port = PORT;
 const path = require('path');
 
 // CORS
