@@ -29,12 +29,12 @@ mongoose
 const listRouter = require('./server/routes/list.router');
 app.use('/list', listRouter);
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '/build')));
 
 app.listen(port, (req, res) => {
   console.log('start ' + port);
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build/index.html'));
+  res.sendFile(path.join(__dirname, '/build/index.html'));
 });

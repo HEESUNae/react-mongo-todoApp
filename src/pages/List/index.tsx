@@ -60,16 +60,17 @@ const ListPage = () => {
           </div>
 
           <div className="list-container">
-            {list.map((item) => (
-              <div className="list" key={item._id}>
-                <p className="list-title">{item.title}</p>
-                <p className="list-content">{item.content}</p>
-                <div className="btn-container">
-                  <PrimaryBtn label="삭제하기" onClick={() => deleteList(item._id)} />
-                  <PrimaryBtn edit label="수정하기" onClick={() => navigate(`/write/${item._id}`)} />
+            {list &&
+              list.map((item) => (
+                <div className="list" key={item._id}>
+                  <p className="list-title">{item.title}</p>
+                  <p className="list-content">{item.content}</p>
+                  <div className="btn-container">
+                    <PrimaryBtn label="삭제하기" onClick={() => deleteList(item._id)} />
+                    <PrimaryBtn edit label="수정하기" onClick={() => navigate(`/write/${item._id}`)} />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </Layout>
