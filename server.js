@@ -38,3 +38,5 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
   console.log('start ' + port);
 });
+
+module.exports = app;
