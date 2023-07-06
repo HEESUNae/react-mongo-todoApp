@@ -3,7 +3,7 @@ const { PORT, MONGO_URI } = process.env;
 
 const express = require('express');
 const app = express();
-const port = PORT;
+const port = PORT | 4000;
 const path = require('path');
 
 // CORS
@@ -35,6 +35,6 @@ app.listen(port, (req, res) => {
   console.log('start ' + port);
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/build/index.html'));
+app.get('*', function (res, req) {
+  req.sendFile(path.join(__dirname, '/build/index.html'));
 });
