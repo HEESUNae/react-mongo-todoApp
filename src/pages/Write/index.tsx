@@ -26,9 +26,10 @@ const WritePage = () => {
       if (params.id) {
         await axiosApi.put(`/list/${params.id}`, formData);
       } else {
-        await axiosApi.post('/list', formData);
+        const data = await axiosApi.post('/list', formData);
+        console.log(data);
       }
-      navigate('/');
+      navigate('/main');
     } catch (e) {
       console.log(e);
     }
@@ -73,7 +74,7 @@ const WritePage = () => {
                   label="목록보기"
                   edit
                   onClick={() => {
-                    navigate('/');
+                    navigate('/main');
                   }}
                 />
                 <PrimaryBtn type="submit" label="등록하기" />

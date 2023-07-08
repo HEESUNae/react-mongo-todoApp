@@ -25,6 +25,10 @@ export const StyledList = styled.div`
         font-weight: 500;
         margin-bottom: 1rem;
       }
+      &-name {
+        margin-top: 1rem;
+        flex-grow: 1;
+      }
       .btn-container {
         margin-top: 1rem;
         display: flex;
