@@ -28,7 +28,7 @@ const LoginPage = () => {
     try {
       const data = await axiosApi.post('/user/login', LoginData);
       if (data.status === 200) {
-        console.log(data);
+        // console.log(data);
         navigate('/main');
       }
     } catch (e) {

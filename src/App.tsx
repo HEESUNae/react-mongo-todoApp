@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="/" element={<LoginPage />}></Route>
-          <Route path="/main" element={<ListPage />}></Route>
+          {/* <Route path="/" element={<LoginPage />}></Route> */}
+          <Route path="/" element={<ListPage />}></Route>
           <Route path="/write" element={<WritePage />}></Route>
           <Route path="/write/:id" element={<WritePage />}></Route>
           <Route path="/join" element={<JoinPage />}></Route>
