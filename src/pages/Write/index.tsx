@@ -27,7 +27,7 @@ const WritePage = () => {
         await axiosApi.put(`/list/${params.id}`, formData);
       } else {
         const data = await axiosApi.post('/list', formData);
-        console.log(data);
+        // console.log(data);
       }
       navigate('/main');
     } catch (e) {

@@ -27,8 +27,8 @@ const LoginPage = () => {
   const onSubmit: SubmitHandler<LoginFormType> = async (LoginData) => {
     try {
       const data = await axiosApi.post('/user/login', LoginData);
-      console.log(data);
-      // navigate('/main');
+      // console.log(data);
+      navigate('/main');
     } catch (e) {
       alert('아이디 또는 비밀번호를 확인해주세요');
     }
