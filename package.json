@@ -2,7 +2,6 @@
   "name": "react-todoapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://heesunae.github.io/react-mongo-todoApp",
   "proxy": "https://react-mongo-todo-app-server.vercel.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
