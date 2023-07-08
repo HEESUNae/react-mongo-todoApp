@@ -27,8 +27,8 @@ const ListPage = () => {
       setList(data);
     } catch (e) {
       console.log(e);
-      alert('로그인해주세요');
-      navigate('/');
+      // alert('로그인해주세요');
+      // navigate('/');
     }
   };
 
