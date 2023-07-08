@@ -13,7 +13,7 @@ interface ListType {
   _id: string;
   title: string;
   content: string;
-  name: string;
+  // name: string;
 }
 
 const ListPage = () => {
@@ -69,7 +69,7 @@ const ListPage = () => {
                   <p className="list-title">{item.title}</p>
                   <p className="list-content">{item.content}</p>
                   <div className="btn-container">
-                    <p className="list-name"> 글쓴이 : {item?.name}</p>
+                    {/* <p className="list-name"> 글쓴이 : {item?.name}</p> */}
                     <PrimaryBtn label="삭제하기" onClick={() => deleteList(item._id)} />
                     <PrimaryBtn edit label="수정하기" onClick={() => navigate(`/write/${item._id}`)} />
                   </div>
