@@ -2,6 +2,7 @@
   "name": "react-todoapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://heesunae.github.io/react-mongo-todoApp",
   "proxy": "https://react-mongo-todo-app-server.vercel.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -15,6 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
     "mongodb": "^5.6.0",
     "mongoose": "^7.3.1",
     "react": "^18.2.0",
@@ -30,7 +32,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

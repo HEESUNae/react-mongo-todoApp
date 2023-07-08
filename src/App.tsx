@@ -10,7 +10,7 @@ import JoinPage from './pages/Join';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<LoginPage />}></Route>
           <Route path="/main" element={<ListPage />}></Route>
