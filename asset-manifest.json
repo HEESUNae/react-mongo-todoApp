@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-mongo-todoApp/static/css/main.57cef50b.css",
+    "main.js": "/react-mongo-todoApp/static/js/main.c2cec9fd.js",
+    "static/js/787.006e7b9e.chunk.js": "/react-mongo-todoApp/static/js/787.006e7b9e.chunk.js",
+    "index.html": "/react-mongo-todoApp/index.html",
+    "main.57cef50b.css.map": "/react-mongo-todoApp/static/css/main.57cef50b.css.map",
+    "main.c2cec9fd.js.map": "/react-mongo-todoApp/static/js/main.c2cec9fd.js.map",
+    "787.006e7b9e.chunk.js.map": "/react-mongo-todoApp/static/js/787.006e7b9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57cef50b.css",
+    "static/js/main.c2cec9fd.js"
+  ]
+}
