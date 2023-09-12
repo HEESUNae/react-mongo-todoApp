@@ -17,6 +17,7 @@ interface ListType {
 }
 
 const ListPage = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const [list, setList] = useState<ListType[]>([]);
   const navigate = useNavigate();
 
@@ -29,6 +30,8 @@ const ListPage = () => {
       console.log(e);
       // alert('로그인해주세요');
       // navigate('/');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -63,7 +66,11 @@ const ListPage = () => {
           </div>
 
           <div className="list-container">
-            {list &&
+            {isLoading ? (
+              <div>
+                <div className="empty-containter">로딩중입니다.</div>
+              </div>
+            ) : list.length > 0 ? (
               list.map((item) => (
                 <div className="list" key={item._id}>
                   <p className="list-title">{item.title}</p>
@@ -74,7 +81,10 @@ const ListPage = () => {
                     <PrimaryBtn edit label="수정하기" onClick={() => navigate(`/write/${item._id}`)} />
                   </div>
                 </div>
-              ))}
+              ))
+            ) : (
+              <div className="empty-containter">작성된 글이 없습니다.</div>
+            )}
           </div>
         </div>
       </Layout>

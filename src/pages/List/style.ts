@@ -37,4 +37,15 @@ export const StyledList = styled.div`
       }
     }
   }
+
+  .empty-containter {
+    border: 1px dotted lightsteelblue;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
